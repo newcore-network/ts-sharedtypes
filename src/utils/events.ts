@@ -1,7 +1,7 @@
 /**
  * Enum for system events.
  */
-export const enum SystemEvents {
+export enum SystemEvents {
   ERROR = "system:error",
   ALERT = "system:alert",
 }
@@ -9,7 +9,7 @@ export const enum SystemEvents {
 /**
  * Enum for auth events.
  */
-export const enum AuthEvents {
+export enum AuthEvents {
   LOGIN_SUCCESS = "auth:login-sucess",
   LOGIN_FAILED = "auth:login-failed",
   TRY_AUTH = "auth:try-auth",
@@ -20,7 +20,7 @@ export const enum AuthEvents {
 /**
  * Enum for character events.
  */
-export const enum CharacterEvents {
+export enum CharacterEvents {
   GET = "character:get",
   SELECT = "character:select",
   INIT_CREATE = "character:init-create",
@@ -35,7 +35,7 @@ export const enum CharacterEvents {
 /**
  * Enum for chat events.
  */
-export const enum ChatEvents {
+export enum ChatEvents {
   MESSAGE = "chat:message",
   ACTION = "chat:action",
 }
@@ -43,7 +43,7 @@ export const enum ChatEvents {
 /**
  * Enum for UI events.
  */
-export const enum UIEvents {
+export enum UIEvents {
   CHECK_CHARACTER_NAME = "character-ui:check-character-name",
   FAIL_TO_CREATE_CHARACTER = "character-ui:fail-to-create-character",
   SET_CHARACTER_PARAM = "character-ui:set-character-param",
