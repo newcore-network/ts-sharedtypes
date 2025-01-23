@@ -1,11 +1,5 @@
 import { Gender, OverlayID, FaceFeaturesIndex, Component } from "./enums";
 
-export type Accessories = Record<number, Accessory>;
-export type Tattoos = Tattoo[];
-export type ComponentVariations = Record<Component, ComponentVariation>;
-export type HeadOverlays = Record<OverlayID, HeadOverlay>;
-export type FaceFeatures = Record<FaceFeaturesIndex, FaceFeature>;
-
 /**
  * Interface for the character model.
  */
@@ -25,11 +19,12 @@ export interface ICharacter {
   /** Recommended eye color indexes range is from 1 to 31 */
   eyesColor: number;
   hairColors: number[];
-  componentVariation: ComponentVariations;
-  headOverlay: HeadOverlays;
-  faceFeatures: FaceFeatures;
-  accessories: Accessories;
-  tattoos: Tattoos;
+  componentVariation: Record<Component, ComponentVariation>;
+  headOverlay: Record<OverlayID, HeadOverlay>;
+  faceFeatures: Record<FaceFeaturesIndex, FaceFeature>;
+  accessories: Record<number, Accessory>;
+  tattoos: Tattoo[];
+  clothes: Record<number, ClothesItem>;
 }
 
 /**
@@ -83,4 +78,10 @@ export interface Accessory {
 export interface Tattoo {
   zone: number;
   hash: string;
+}
+
+export interface ClothesItem {
+  drawable: number;
+  texture: number;
+  paletteId?: number;
 }
