@@ -25,7 +25,7 @@ export interface ICharacter {
   accessories: Record<number, Accessory>;
   tattoos: Tattoo[];
   clothes: Record<number, ClothesItem>;
-  lastDimesion: number;
+  lastDimension: number;
   onlineTime: number;
 }
 
