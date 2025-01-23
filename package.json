@@ -20,7 +20,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "publish": "tsc && git push origin main && npm publish --access public"
+    "upLib": "tsc && git push origin main && npm publish --access public"
   },
   "keywords": [
     "typescript",
