@@ -1,11 +1,15 @@
 {
   "name": "@newcore-network/ts-sharedtypes",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Shared types and interfaces for Newcore projects",
+  "main": "dist/empty.js",
+  "module": "dist/empty.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/empty.js",
+      "require": "./dist/empty.js"
     }
   },
   "files": [
@@ -16,9 +20,15 @@
   },
   "scripts": {
     "build": "tsc",
-    "upLib": "tsc && git push origin master && npm publish --access public"
+    "publish": "tsc && git push origin main && npm publish --access public"
   },
-  "keywords": [],
+  "keywords": [
+    "typescript",
+    "shared",
+    "types",
+    "interfaces",
+    "newcore"
+  ],
   "author": "Newcore Team",
   "license": "MIT",
   "devDependencies": {
