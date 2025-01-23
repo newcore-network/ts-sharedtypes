@@ -2,14 +2,10 @@
   "name": "@newcore-network/ts-sharedtypes",
   "version": "0.1.8",
   "description": "Shared types and interfaces for Newcore projects",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.js"
+      "types": "./dist/index.d.ts"
     }
   },
   "files": [
@@ -20,7 +16,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "publish": "tsc && git push origin master && npm publish --access public"
+    "upLib": "tsc && git push origin master && npm publish --access public"
   },
   "keywords": [],
   "author": "Newcore Team",
