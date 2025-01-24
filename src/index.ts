@@ -1,4 +1,4 @@
-export * from "./character/interfaces.js";
-export * from "./character/paramTypes.js";
+export * from "./character/interfaces";
+export * from "./character/paramTypes";
 
-export * from "./utils/events.js";
+export * from "./utils/events";
