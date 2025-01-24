@@ -17,10 +17,14 @@ export interface ICharacter {
   model: number;
   age: number;
   gender: Gender;
+
   money?: number;
   health?: number;
   armour?: number;
   lastPosition: { x: number; y: number; z: number };
+  lastDimension: number;
+  onlineTime: number;
+
   blendData: BlendData;
   /** Recommended eye color indexes range is from 1 to 31 */
   eyesColor: number;
@@ -28,11 +32,10 @@ export interface ICharacter {
   componentVariation: Record<Component, ComponentVariation>;
   headOverlay: Record<OverlayID, HeadOverlay>;
   faceFeatures: Record<FaceFeaturesIndex, FaceFeature>;
-  accessories: Record<number, Accessory>;
-  tattoos: Tattoo[];
-  clothes: Record<number, ClothesItem>;
-  lastDimension: number;
-  onlineTime: number;
+
+  tattoos: Record<TattooZone, Omit<Tattoo, "zoneName">>;
+  clothes: Record<Component, ClothingItem>;
+  accessories: Record<Component, Accessory>;
 }
 
 /**
@@ -88,7 +91,7 @@ export interface Tattoo {
   hash: number;
 }
 
-export interface ClothesItem {
+export interface ClothingItem {
   drawable: number;
   texture: number;
   paletteId?: number;
