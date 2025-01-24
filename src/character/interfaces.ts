@@ -1,4 +1,10 @@
-import { Gender, OverlayID, FaceFeaturesIndex, Component } from "./enums";
+import {
+  Gender,
+  OverlayID,
+  FaceFeaturesIndex,
+  Component,
+  TattooZone,
+} from "./enums";
 
 /**
  * Interface for the character model.
@@ -78,8 +84,8 @@ export interface Accessory {
 }
 
 export interface Tattoo {
-  zone: number;
-  hash: string;
+  zone: TattooZone;
+  hash: number;
 }
 
 export interface ClothesItem {

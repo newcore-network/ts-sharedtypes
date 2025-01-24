@@ -109,3 +109,12 @@ export enum BodyPart {
   Neck = 19,
   Head = 20,
 }
+
+export enum TattooZone {
+  Head = "ZONE_HEAD",
+  LeftArm = "ZONE_LEFT_ARM",
+  RightArm = "ZONE_RIGHT_ARM",
+  LeftLeg = "ZONE_LEFT_LEG",
+  RightLeg = "ZONE_RIGHT_LEG",
+  Torso = "ZONE_TORSO",
+}
