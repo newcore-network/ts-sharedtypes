@@ -1,8 +1,14 @@
-import { Component, FaceFeaturesIndex, Gender, OverlayID } from "./enums";
+import { Component, FaceFeaturesIndex, Gender, OverlayID } from "./interfaces";
+
+/**
+ * Represents valid gender values.
+ * - `0`: Male
+ * - `1`: Female
+ */
 
 export interface GenderChange {
   param: "gender";
-  value: Gender.Female | Gender.Male;
+  value: Gender;
 }
 
 export interface BlendDataChange {
