@@ -35,7 +35,10 @@ export interface ICharacter {
 
   tattoos: Record<TattooZone, Omit<Tattoo, "zone">>;
   clothes: Record<Component, ClothingItem>;
-  accessories: Record<Component, Accessory>;
+  accessories: Record<
+    Component.Accessories1 | Component.Accessories2,
+    Accessory
+  >;
 }
 
 /**
