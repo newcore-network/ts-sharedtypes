@@ -1,5 +1,5 @@
-export * from "./character/enums";
-export * from "./character/interfaces";
-export * from "./character/paramTypes";
+export * from "./character/enums.js";
+export * from "./character/interfaces.js";
+export * from "./character/paramTypes.js";
 
-export * from "./utils/events";
+export * from "./utils/events.js";

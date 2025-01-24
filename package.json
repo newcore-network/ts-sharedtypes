@@ -7,9 +7,29 @@
   "module": "dist/index.js",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
-      "require": "./dist/index.js"
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./character/enums": {
+      "import": "./dist/character/enums.js",
+      "require": "./dist/character/enums.js",
+      "types": "./dist/character/enums.d.ts"
+    },
+    "./character/interfaces": {
+      "import": "./dist/character/interfaces.js",
+      "require": "./dist/character/interfaces.js",
+      "types": "./dist/character/interfaces.d.ts"
+    },
+    "./character/paramTypes": {
+      "import": "./dist/character/paramTypes.js",
+      "require": "./dist/character/paramTypes.js",
+      "types": "./dist/character/paramTypes.d.ts"
+    },
+    "./utils/events": {
+      "import": "./dist/utils/events.js",
+      "require": "./dist/utils/events.js",
+      "types": "./dist/utils/events.d.ts"
     }
   },
   "files": [

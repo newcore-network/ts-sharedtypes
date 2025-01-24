@@ -4,7 +4,7 @@ import {
   FaceFeaturesIndex,
   Component,
   TattooZone,
-} from "./enums";
+} from "./enums.js";
 
 /**
  * Interface for the character model.
