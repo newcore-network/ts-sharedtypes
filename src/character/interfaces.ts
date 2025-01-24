@@ -33,7 +33,7 @@ export interface ICharacter {
   headOverlay: Record<OverlayID, HeadOverlay>;
   faceFeatures: Record<FaceFeaturesIndex, FaceFeature>;
 
-  tattoos: Record<TattooZone, Omit<Tattoo, "zoneName">>;
+  tattoos: Record<TattooZone, Omit<Tattoo, "zone">>;
   clothes: Record<Component, ClothingItem>;
   accessories: Record<Component, Accessory>;
 }
